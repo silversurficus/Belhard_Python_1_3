@@ -12,7 +12,7 @@
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
 - 'hello world' -> ('Hello ', 'world')
-- 'hello' -> ('hel', 'lo')
+- 'hello' -> ('he', 'llo')
 - 'some' -> ('so', 'me')
 """
 from math import floor
@@ -20,7 +20,7 @@ from math import floor
 
 def split_to_parts(str_to_split: str) -> tuple:
     """Разделяет строку на 2 части. Если длина строки нечетная, то первая часть
-    на один символ больше
+    на один символ меньше
 
     :param str_to_split: строка для разделения
 
