@@ -39,13 +39,13 @@ def calculate_deposit(summa: float, years: int) -> float:
 
     :return: итоговая сумма на вкладе
     """
-
-    return None
+    sum_total = summa*((1 + DEPOSIT_RATE/100) ** years)
+    return sum_total
 
 
 if __name__ == '__main__':
     print('Программа расчета суммы на депозите после некоторого кол-ва лет')
-    sum_val = float(input('Введите сумму для вклада: '))
-    years_val = int(input('Введите количество лет: '))
-    print(f"После {years_val} лет сумма на депозите будет равна: "
-          f"{calculate_deposit(sum_val, years_val)}")
+    summa = float(input('Введите сумму для вклада: '))
+    years = int(input('Введите количество лет: '))
+    print(f"После {years} лет сумма на депозите будет равна: "
+          f"{calculate_deposit(summa, years)}")

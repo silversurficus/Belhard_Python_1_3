@@ -24,11 +24,12 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-
-
-    return None
-
+    storona = float(side)
+    perimetr = storona * 4
+    ploshad = storona ** 2
+    diagonal = sqrt(2*storona**2)
+    return perimetr, ploshad, diagonal
 
 if __name__ == '__main__':
-    side_val = input('Введите сторону квадрата: ')
-    print(f'(Периметр, Площадь, Диагональ): {square(side_val)}')
+    side = input('Введите сторону квадрата: ')
+    print(f'(Периметр, Площадь, Диагональ): {square(side)}')

@@ -21,11 +21,13 @@ def tip(bill: str) -> tuple:
         а второе значение - размер cashback (3%)
     :rtype: tuple
     """
-
-    return None
+    bill_to_float = float(bill)
+    chayeviye = bill_to_float * 15/100
+    cashback = bill_to_float * 3/100
+    return chayeviye, cashback
 
 
 if __name__ == '__main__':
-    bill_val = input('Введите сумму из чека: ')
-    result = tip(bill_val)
+    bill = input('Введите сумму из чека: ')
+    result = tip(bill)
     print(f'Чаевые, cashback: {result[0]:.2f}, {result[1]:.2f}')

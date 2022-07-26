@@ -19,10 +19,10 @@ def n_sum(n: int) -> int:
 
     :return: результат выполнения
     """
-
-    return None
+    summa = n+n*n+n*n*n
+    return summa
 
 
 if __name__ == '__main__':
-    n_number = int(input('Введите число n: '))
-    print(f'Результат n+nn+nnn: {n_sum(n_number)}')
+    n = int(input('Введите число n: '))
+    print(f'Результат n+nn+nnn: {n_sum(n)}')

@@ -25,11 +25,13 @@ def str_sum(str1: str, str2: str) -> int:
     :return: сумму чисел из строк
     :rtype: int
     """
-
-    return None
+    chislo_1 = int(str1)
+    chislo_2 = int(str2)
+    summa = chislo_1+chislo_2
+    return summa
 
 
 if __name__ == '__main__':
-    str1_val = input('Введите первое число: ')
-    str2_val = input('Введите второе число: ')
-    print(f'Сумма чисел: {str_sum(str1_val, str2_val)}')
+    str1 = input('Введите первое число: ')
+    str2 = input('Введите второе число: ')
+    print(f'Сумма чисел: {str_sum(str1, str2)}')

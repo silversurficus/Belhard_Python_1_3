@@ -15,7 +15,7 @@
 - 'hello' -> ('hel', 'lo')
 - 'some' -> ('so', 'me')
 """
-from math import floor
+from math import ceil
 
 
 def split_to_parts(str_to_split: str) -> tuple:
@@ -26,10 +26,12 @@ def split_to_parts(str_to_split: str) -> tuple:
 
     :return: кортеж с двумя частями
     """
-
-    return None
+    length_divided = ceil((len(str_to_split)-1)/2)
+    razbivka_1 = str_to_split[0: length_divided]
+    razbivka_2 = str_to_split[length_divided:]
+    return razbivka_1, razbivka_2
 
 
 if __name__ == '__main__':
-    string = input('Введите строку для разбивки: ')
-    print(f"Результат: {split_to_parts(string)}")
+    str_to_split = input('Введите строку для разбивки: ')
+    print(f"Результат: {split_to_parts(str_to_split)}")

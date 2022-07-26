@@ -22,12 +22,15 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
 
     :return: Фамилия И.О.
     """
-
-    return None
+    s_1 = surname.capitalize()
+    n_1 = name.capitalize()
+    p_1 = patronymic.capitalize()
+    fio = s_1 + ' ' + n_1[0] + '.' + p_1[0] + '.'
+    return fio
 
 
 if __name__ == '__main__':
-    s = input('Введите фамилию: ')
-    n = input('Введите Имя: ')
-    p = input('Введите Отчество: ')
-    print(f'Результат: {generate_fio(s, n, p)}')
+    surname = input('Введите фамилию: ')
+    name = input('Введите Имя: ')
+    patronymic = input('Введите Отчество: ')
+    print(f'Результат: {generate_fio(surname, name, patronymic)}')

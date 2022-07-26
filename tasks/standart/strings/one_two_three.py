@@ -24,10 +24,12 @@ def process_numbers(numbers: str) -> str:
 
     :return: обработанная строка
     """
-
-    return None
+    string_1 = numbers.replace('1', 'uno')
+    string_2 = string_1.replace('2', 'two')
+    string_3 = string_2.replace('3', '')
+    return string_3
 
 
 if __name__ == '__main__':
-    string = input('Введите строку: ')
-    print(f"Результат: {process_numbers(string)}")
+    numbers = input('Введите строку: ')
+    print(f"Результат: {process_numbers(numbers)}")

@@ -33,8 +33,9 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
-
-    return None
+    str = ',\n'.join(RECIPE)
+    'Масло растительное - 2 ст.л.'
+    return 'Рецепт' + ' ' + TITLE + ':\n' + str
 
 
 if __name__ == '__main__':
