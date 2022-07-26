@@ -27,7 +27,7 @@ def str_sum(str1: str, str2: str) -> int:
     """
     chislo_1 = int(str1)
     chislo_2 = int(str2)
-    summa = chislo_1+chislo_2
+    summa = chislo_1 + chislo_2
     return summa
 
 

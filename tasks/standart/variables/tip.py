@@ -22,8 +22,8 @@ def tip(bill: str) -> tuple:
     :rtype: tuple
     """
     bill_to_float = float(bill)
-    chayeviye = bill_to_float * 15/100
-    cashback = bill_to_float * 3/100
+    chayeviye = bill_to_float * 15 / 100
+    cashback = bill_to_float * 3 / 100
     return chayeviye, cashback
 
 

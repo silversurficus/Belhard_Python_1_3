@@ -27,8 +27,9 @@ def square(side: str) -> tuple:
     storona = float(side)
     perimetr = storona * 4
     ploshad = storona ** 2
-    diagonal = sqrt(2*storona**2)
+    diagonal = sqrt(2 * storona ** 2)
     return perimetr, ploshad, diagonal
+
 
 if __name__ == '__main__':
     side = input('Введите сторону квадрата: ')
